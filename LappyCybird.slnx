@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="LappyCybird/LappyCybird.vcxproj" Id="6e08f4fa-ffba-4f37-af71-d75e489ad6cb" />
+</Solution>
