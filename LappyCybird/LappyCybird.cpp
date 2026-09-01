@@ -4,8 +4,10 @@
 #include <iostream>
 #include <Instance.h>
 #include <Level/MenuStart/MenuStart.h>
+#include <Level/GamePlay/GamePlay.h>
 
 std::unique_ptr<MenuStart> menuStart;
+std::unique_ptr<GamePlay> gamePlay;
 
 SDL_AppResult SDL_AppInit(void** appstate, int argc, char* argv[])
 {
@@ -38,8 +40,10 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char* argv[])
 	global.engine = new Engine::Engines(global.renderer);
 
 	menuStart = std::make_unique<MenuStart>();
+	gamePlay = std::make_unique<GamePlay>();
 
 	global.engine->GetGame().AddLevel("menu", std::move(menuStart));
+	global.engine->GetGame().AddLevel("game", std::move(gamePlay));
 	global.engine->GetGame().PlayLevel("menu");
 
 	return SDL_APP_CONTINUE;
@@ -47,7 +51,7 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char* argv[])
 
 SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event)
 {
-	if (event->type == SDL_EVENT_QUIT)
+	if (event->type == SDL_EVENT_QUIT || !global.running)
 		return SDL_APP_SUCCESS;
 
 	switch (event->key.key)

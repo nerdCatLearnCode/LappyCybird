@@ -3,6 +3,8 @@
 #include <Engine/NodeManager/Manager.h>
 #include <Instance.h>
 #include "Buttons/ButtonStart.h"
+#include "Buttons/ButtonSetting.h"
+#include "Buttons/ButtonQuit.h"
 #include <memory>
 
 class MenuStart 
@@ -17,5 +19,7 @@ public:
 
 private:
 	std::unique_ptr<ButtonStart> start;
+	std::unique_ptr<ButtonSetting> setting;
+	std::unique_ptr<ButtonQuit> quit;
 };
 

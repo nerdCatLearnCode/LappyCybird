@@ -8,8 +8,8 @@ ButtonStart::ButtonStart()
 
 	transform.scale =
 	{
-		4,
-		4
+		1,
+		1
 	};
 
 	transform.size = {
@@ -17,11 +17,13 @@ ButtonStart::ButtonStart()
 		64 * transform.scale.y * global.proportionHeight
 	};
 
-	transform.pos =
-	{
-		(static_cast<float>(global.WIDTH) / 2) - (transform.size.w / 2),
-		(static_cast<float>(global.HEIGHT) / 2) - (transform.size.h / 2)
-	};
+	transform.pos.x =
+		(static_cast<float>(global.WIDTH) / 2) - (transform.size.w / 2);
+
+	float y = (0 + 50) * global.proportionHeight;
+
+	transform.pos.y = y;
+
 
 	transform.src =
 	{
@@ -31,7 +33,7 @@ ButtonStart::ButtonStart()
 
 	transform.src_size =
 	{
-		64,
+		96,
 		32
 	};
 
@@ -68,7 +70,19 @@ void ButtonStart::Render()
 
 void ButtonStart::Update()
 {
+	mouse.Update();
 
+	if (mouse.ButtonPressed(SDL_BUTTON_LEFT))
+	{
+		if (mouse.GetX() >= transform.pos.x &&
+			mouse.GetX() <= transform.pos.x + transform.size.w &&
+			mouse.GetY() >= transform.pos.y &&
+			mouse.GetY() <= transform.pos.y + transform.size.h)
+		{
+			std::cout << "ButtonStart clicked\n";
+			global.engine->GetGame().PlayLevel("game");
+		}
+	}
 }
 
 void ButtonStart::UpdateEvent()

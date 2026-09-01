@@ -15,6 +15,8 @@ struct Global
 	int WIDTH, HEIGHT;
 
 	float proportionWidth, proportionHeight;
+
+	bool running = true;
 };
 
 inline Global global;

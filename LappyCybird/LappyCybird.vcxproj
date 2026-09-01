@@ -142,6 +142,9 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Level\GamePlay\GamePlay.cpp" />
+    <ClCompile Include="Level\MenuStart\Buttons\ButtonQuit.cpp" />
+    <ClCompile Include="Level\MenuStart\Buttons\ButtonSetting.cpp" />
     <ClCompile Include="Engine\Animated\Animated.cpp" />
     <ClCompile Include="Engine\Animated\AnimatedManager.cpp" />
     <ClCompile Include="Engine\Collision\Collision.cpp" />
@@ -186,6 +189,9 @@
     <ClInclude Include="Engine\Texture\Texture.h" />
     <ClInclude Include="Engine\TypeInput\Type.h" />
     <ClInclude Include="Instance.h" />
+    <ClInclude Include="Level\GamePlay\GamePlay.h" />
+    <ClInclude Include="Level\MenuStart\Buttons\ButtonQuit.h" />
+    <ClInclude Include="Level\MenuStart\Buttons\ButtonSetting.h" />
     <ClInclude Include="Level\MenuStart\Buttons\ButtonStart.h" />
     <ClInclude Include="Level\MenuStart\MenuStart.h" />
   </ItemGroup>
