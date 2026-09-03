@@ -12,8 +12,8 @@ ButtonQuit::ButtonQuit()
 
 	transform.size =
 	{
-		128 * transform.scale.x * global.proportionWidth,
-		64 * transform.scale.y * global.proportionHeight
+		51 * 2 * transform.scale.x * global.proportionWidth,
+		16 * 2 * transform.scale.y * global.proportionHeight
 	};
 
 	transform.pos =
@@ -24,14 +24,14 @@ ButtonQuit::ButtonQuit()
 
 	transform.src =
 	{
-		97,
+		80,
 		0
 	};
 
 	transform.src_size =
 	{
-		96,
-		32
+		51,
+		16
 	};
 }
 

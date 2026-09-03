@@ -27,6 +27,8 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char* argv[])
 
 	SDL_MaximizeWindow(global.window);
 
+	SDL_SetWindowFullscreen(global.window, true);
+
 	SDL_GetWindowSize(global.window,
 		&global.WIDTH,
 		&global.HEIGHT);

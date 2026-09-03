@@ -13,8 +13,8 @@ ButtonStart::ButtonStart()
 	};
 
 	transform.size = {
-		128 * transform.scale.x * global.proportionWidth,
-		64 * transform.scale.y * global.proportionHeight
+		69 * 2 * transform.scale.x * global.proportionWidth,
+		16 * 2 * transform.scale.y * global.proportionHeight
 	};
 
 	transform.pos.x =
@@ -33,8 +33,8 @@ ButtonStart::ButtonStart()
 
 	transform.src_size =
 	{
-		96,
-		32
+		69,
+		16
 	};
 
 	std::cout << global.renderer << std::endl;

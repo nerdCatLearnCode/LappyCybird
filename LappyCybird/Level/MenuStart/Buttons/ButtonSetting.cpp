@@ -11,8 +11,8 @@ ButtonSetting::ButtonSetting()
 
 	transform.size =
 	{
-		128 * transform.scale.x * global.proportionWidth,
-		64 * transform.scale.y * global.proportionHeight
+		102 * 2 * transform.scale.x * global.proportionWidth,
+		16 * 2 * transform.scale.y * global.proportionHeight
 	};
 
 	transform.pos =
@@ -24,13 +24,13 @@ ButtonSetting::ButtonSetting()
 	transform.src =
 	{
 		0,
-		32
+		16
 	};
 
 	transform.src_size =
 	{
-		96,
-		32
+		102,
+		16
 	};
 
 

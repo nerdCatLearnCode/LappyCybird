@@ -142,6 +142,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Level\Background\Background.cpp" />
     <ClCompile Include="Level\GamePlay\GamePlay.cpp" />
     <ClCompile Include="Level\MenuStart\Buttons\ButtonQuit.cpp" />
     <ClCompile Include="Level\MenuStart\Buttons\ButtonSetting.cpp" />
@@ -189,6 +190,7 @@
     <ClInclude Include="Engine\Texture\Texture.h" />
     <ClInclude Include="Engine\TypeInput\Type.h" />
     <ClInclude Include="Instance.h" />
+    <ClInclude Include="Level\Background\background.h" />
     <ClInclude Include="Level\GamePlay\GamePlay.h" />
     <ClInclude Include="Level\MenuStart\Buttons\ButtonQuit.h" />
     <ClInclude Include="Level\MenuStart\Buttons\ButtonSetting.h" />
@@ -196,7 +198,13 @@
     <ClInclude Include="Level\MenuStart\MenuStart.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\texture\Background.png" />
     <Image Include="Assets\texture\menu.png" />
+    <Image Include="Assets\texture\parallax-space-far-planets.png" />
+    <Image Include="Assets\texture\parallax-space-stars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\texture\Background.ase" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

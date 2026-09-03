@@ -81,6 +81,9 @@
     <ClCompile Include="Level\GamePlay\GamePlay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Level\Background\Background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Instance.h">
@@ -167,10 +170,25 @@
     <ClInclude Include="Level\GamePlay\GamePlay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Level\Background\background.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\texture\menu.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Assets\texture\Background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\parallax-space-far-planets.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\parallax-space-stars.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\texture\Background.ase" />
   </ItemGroup>
 </Project>

@@ -6,6 +6,7 @@
 #include "Buttons/ButtonSetting.h"
 #include "Buttons/ButtonQuit.h"
 #include <memory>
+#include <Level/Background/background.h>
 
 class MenuStart 
 	: public NodeManager::Manager
@@ -21,5 +22,6 @@ private:
 	std::unique_ptr<ButtonStart> start;
 	std::unique_ptr<ButtonSetting> setting;
 	std::unique_ptr<ButtonQuit> quit;
+	std::unique_ptr<Background> background;
 };
 
