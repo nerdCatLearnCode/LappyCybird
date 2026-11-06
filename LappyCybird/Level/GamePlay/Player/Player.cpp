@@ -25,6 +25,21 @@ Player::Player()
 	
 }
 
+void Player::Update()
+{
+	
+}
+
+void Player::Render()
+{
+	
+}
+
+void Player::UpdateEvent()
+{
+
+}
+
 Player::~Player()
 {
 	delete PlayerTexture;
