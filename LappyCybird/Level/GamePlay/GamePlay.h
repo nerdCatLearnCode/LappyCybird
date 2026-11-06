@@ -2,6 +2,7 @@
 
 #include <Engine/NodeManager/Manager.h>
 #include <Instance.h>
+#include <Level/Background/background.h>
 
 class GamePlay : public NodeManager::Manager
 {
@@ -12,6 +13,6 @@ public:
 	void Render() override;
 
 private:
-
+	std::unique_ptr<Background> background;
 };
 

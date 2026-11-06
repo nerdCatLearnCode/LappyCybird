@@ -1,5 +1,13 @@
 #include "background.h"
 
+void DrawRect(SDL_Renderer* renderer, SDL_FRect rect, SDL_Color color)
+{
+	SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
+	SDL_RenderFillRect(renderer, &rect);
+}
+
+
+
 Background::Background()
 	: backgroundTexture(new Engine::RenderTexture(global.renderer, IMG_Load("D:/CppProject/LappyCybird/LappyCybird/Assets/texture/Background.png"))),
 	backgroundTextureStar(new Engine::RenderTexture(global.renderer, IMG_Load("D:/CppProject/LappyCybird/LappyCybird/Assets/texture/parallax-space-far-planets.png"))),
@@ -28,6 +36,7 @@ Background::~Background()
 {
 	delete backgroundTexture;
 	delete backgroundTextureStar;
+	delete backgroundTexturePlanet;
 }
 
 void Background::Render()
@@ -42,6 +51,8 @@ void Background::Render()
 	texture->Render(srcRect, dstRect);
 	backgroundTextureStar->Render(srcRect, dstRect);
 	backgroundTexturePlanet->Render(srcRect, dstRect);
+
+	
 }
 
 void Background::Update()

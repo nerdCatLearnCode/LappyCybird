@@ -3,6 +3,7 @@
 #include <SDL3/SDL.h>
 #include <Engine/Node/Node.h>
 #include <Engine/Texture/Texture.h>
+#include <memory>
 #include <Instance.h>
 
 class Background : public Engine::Node
@@ -21,4 +22,3 @@ private:
 	Engine::RenderTexture* backgroundTexturePlanet;
 
 };
-

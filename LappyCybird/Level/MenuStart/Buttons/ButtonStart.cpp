@@ -79,7 +79,6 @@ void ButtonStart::Update()
 			mouse.GetY() >= transform.pos.y &&
 			mouse.GetY() <= transform.pos.y + transform.size.h)
 		{
-			std::cout << "ButtonStart clicked\n";
 			global.engine->GetGame().PlayLevel("game");
 		}
 	}

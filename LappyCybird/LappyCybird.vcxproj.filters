@@ -84,6 +84,9 @@
     <ClCompile Include="Level\Background\Background.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Level\GamePlay\Player\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Instance.h">
@@ -173,6 +176,9 @@
     <ClInclude Include="Level\Background\background.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Level\GamePlay\Player\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\texture\menu.png">
@@ -185,6 +191,60 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Assets\texture\parallax-space-stars.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\dirt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\ThienThach15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\texture\Player.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -17,7 +17,7 @@ MenuStart::MenuStart()
 
 void MenuStart::Render()
 {
-
+	
 }
 
 void MenuStart::Update()
