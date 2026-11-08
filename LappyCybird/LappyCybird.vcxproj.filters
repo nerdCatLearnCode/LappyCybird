@@ -247,6 +247,9 @@
     <Image Include="Assets\texture\Player.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Assets\texture\Player1-sheet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\texture\Background.ase" />

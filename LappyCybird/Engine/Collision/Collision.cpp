@@ -28,15 +28,9 @@ namespace Engine
 		{
 			for (size_t j = i + 1; j < Colliders.size();j++)
 			{
-				SDL_Log(
-					"Checking %s vs %s",
-					Colliders[i]->id.c_str(),
-					Colliders[j]->id.c_str()
-				);
 
 				if (isCollide(*Colliders[i], *Colliders[j]))
 				{
-					SDL_Log("COLLISION!");
 
 					Colliders[i]->isCollide = true;
 					Colliders[j]->isCollide = true;

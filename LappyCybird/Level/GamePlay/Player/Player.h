@@ -2,7 +2,9 @@
 
 #include <Engine/Node/Node.h>
 #include <Engine/Texture/Texture.h>
+#include <Engine/Animated/Animated.h>
 #include <Instance.h>
+#include <SDL3/SDL.h>
 
 class Player : public Engine::Node
 {
@@ -16,5 +18,6 @@ public:
 
 private:
 	Engine::RenderTexture* PlayerTexture;
+	Engine::Animated* PlayerAnimated;
 };
 

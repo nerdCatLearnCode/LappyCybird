@@ -206,6 +206,7 @@
     <Image Include="Assets\texture\parallax-space-far-planets.png" />
     <Image Include="Assets\texture\parallax-space-stars.png" />
     <Image Include="Assets\texture\Player.png" />
+    <Image Include="Assets\texture\Player1-sheet.png" />
     <Image Include="Assets\texture\ThienThach.png" />
     <Image Include="Assets\texture\ThienThach1.png" />
     <Image Include="Assets\texture\ThienThach10.png" />
